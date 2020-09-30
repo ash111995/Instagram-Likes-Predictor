@@ -1,0 +1,166 @@
+*{
+  margin: 0; padding: 0; box-sizing: border-box;
+  font-family: 'Russo One', sans-serif;
+}
+
+header{
+  width: 100%; height: 100vh;
+  background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0, 0, 0, 0.1)), url('instagram_background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+nav{
+  width: 100%; height: 10vh;
+  background: rgba(0,0,0,0.2);
+  color: white; display: flex; justify-content: space-between;
+  align-items: center; text-transform: uppercase;
+
+}
+
+
+
+@media screen and (max-width: 500px) {
+  nav{
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+
+
+nav .logo{
+  width: 15%; text-align: center;
+  color: #940d0d;
+}
+
+nav .menu{
+  width: 30%;
+  display: flex; justify-content: space-around;
+
+}
+
+
+nav .menu a{
+  float = left;
+  width: 33.33%;
+  text-decoration: none; color: white;
+  text-align: center;
+}
+
+main{
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white
+}
+
+section{
+
+}
+
+section h3{
+  font-size: 35px; font-weight: 200; letter-spacing: 3px;
+  text-shadow: 1px 1px 2px black;
+}
+
+section h1{
+  margin: 30px 0 20px 0;
+  font-size: 55px;
+  font-weight: 700;
+  text-shadow: 2px 1px 5px black;
+  text-transform: uppercase;
+  font-family: 'Special Elite', cursive;
+}
+
+section p{
+  font-size: 30px;
+  word-spacing: 2px;
+  margin-bottom: 25px;
+  text-shadow: 1px 1px 1px black;
+  font-family: 'Caveat', cursive;
+}
+
+section button{
+  padding: 12px 25px;
+  display: inline-block;
+  border-radius: 8px;
+  outline: none;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-size: 500;
+  text-decoration: none;
+  letter-spacing: 1px;
+  transition: 0.5s;
+}
+
+section .btnone{
+
+  color: #000
+}
+
+section .btnone:hover{
+  background: #fff;
+  color: #940d0d;
+  box-shadow: 0 0 5px #fff,
+              0 0 25px #fff,
+              0 0 50px #fff,
+              0 0 200px #fff;
+}
+
+button span
+{
+  position: absolute;
+  display: block;
+}
+
+button span:nth-child(1)
+{
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg,transparent,#fff);
+  animation: animate1 1s linear infinite;
+}
+
+
+
+.change_content::after{
+  content: '';
+  animation: changetext 6s infinite linear;
+  color: #940d0d;
+}
+
+@keyframes changetext{
+  0%{content: "Likes";}
+  33%{content: "Posts";}
+  66%{content: "Followers";}
+  100%{content: "Following";}
+  }
+
+  input {
+  	width: auto;
+  	margin-bottom: 10px;
+  	background: rgba(0,0,0,0.7);
+  	border: none;
+  	outline: none;
+  	padding: 10px;
+  	font-size: 13px;
+  	color: #fff;
+  	text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+  	border: 1px solid rgba(0,0,0,0.3);
+  	border-radius: 4px;
+  	box-shadow: inset 0 -5px 45px rgba(100,100,100,0.2), 0 1px 1px rgba(255,255,255,0.2);
+  	-webkit-transition: box-shadow .5s ease;
+  	-moz-transition: box-shadow .5s ease;
+  	-o-transition: box-shadow .5s ease;
+  	-ms-transition: box-shadow .5s ease;
+  	transition: box-shadow .5s ease;
+  }
+  input:focus { box-shadow: inset 0 -5px 45px rgba(100,100,100,0.4), 0 1px 1px rgba(255,255,255,0.2); }

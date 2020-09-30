@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title> </title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+    <!-- <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}"> -->
+  </head>
+  <body>
+
+  <header>
+
+  <nav>
+    <div class="logo"> <h1 class="animate__animated animate__heartBeat animate__infinite	infinite"> Likes </h1> </div>
+    <div class="menu">
+      <a href="https://www.linkedin.com/in/ashish-barik-ash1995/">Linkedin</a>
+      <a href="https://medium.com/@ashishbarik95">Medium</a>
+      <a href="https://github.com/ash111995">github</a>
+
+    </div>
+  </nav>
+    <main>
+      <section>
+        <h3>Saga of <span class="change_content"></span></h3>
+        <h1>Instagram Likes Predictor</h1>
+        <p>"Expect Nothing, Appreciate Everything"</p>
+        <form action="{{ url_for('predict')}}"method="post">
+          <input type="text" name="username" placeholder="USERNAME" required="required" />
+           <button type="submit" class="btnone">
+           <span></span>
+           <span></span>
+           <span></span>
+           <span></span>
+           Predict
+         </button>
+        </form>
+
+        <br>
+        {{ prediction_text }}
+      </section>
+    </main>
+  </header>
+
+</body>
+</html>
